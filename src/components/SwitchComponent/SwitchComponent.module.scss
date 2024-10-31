@@ -1,0 +1,53 @@
+.switchContent{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .switchText{
+        font-size: 16px;
+        line-height: 18.75px;
+        text-align: left;
+        color: rgba(62, 64, 86, 1);
+        font-weight: 600;
+    }
+
+    .switcher{
+        position: relative;
+        width: 40px;
+        height: 24px;
+        background-color: rgba(237, 82, 103, 1);
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color .25s;
+
+        &.public{
+            background-color: rgba(62, 64, 86, 1);
+        }
+
+        &.private{
+            background-color: rgba(237, 82, 103, 1);
+
+            .circle{
+                left: 19px;
+            }
+        }
+
+        .circle{
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: left .25s;
+        }
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .switchContent{
+        justify-content: center;
+        align-items: center;
+    }
+}

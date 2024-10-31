@@ -1,0 +1,140 @@
+.postCard{
+    background-color: #fff;
+    width: 374px;
+    height: 280px;
+    border-radius: 8px;
+    box-shadow: 0px 24px 24px 0px rgba(0, 0, 0, 0.12);
+    padding: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .sharedText{
+        font-size: 16px;
+        line-height: 18.75px;
+        text-align: left;
+        color: rgba(62, 64, 86, 1);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+
+        .groupName{
+            background: rgba(236, 241, 248, 1);
+            border-radius: 6px;
+            padding: 3px 4px;
+        }
+
+        &.empty{
+            height: 18.75px;
+        }
+    }
+
+    .postText{
+        font-family: 'Montserrat';
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 43.88px;
+        text-align: left;
+        margin-bottom: 44px;
+    }
+
+    .authorContent{
+        display: flex;
+        justify-content: space-between;
+
+        .authorInfo{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .authorAvatar{
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+
+                .authorAvatarImg{
+                    width: 24px;
+                    height: 24px;
+                }
+
+                .noAvatar{
+                    width: 24px;
+                    height: 24px;
+                    background: rgba(178, 179, 187, 1);
+                    border-radius: 50%;
+                }
+            }
+
+            .author{
+                font-size: 14px;
+                line-height: 16.41px;
+                text-align: left;
+                font-weight: 500;
+            }
+        }
+
+        .shareInfo{
+            .sharedInfoContent{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .viewsContent, .likesContent{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+
+                .viewImageContent{
+                    width: 16px;
+                    height: 16px;
+
+                    img{
+                        position: absolute;
+                    }
+                }  
+                
+                .likeImageContent{
+                    width: 16px;
+                    height: 14px;
+
+                    img{
+                        position: absolute;
+                    }
+                }
+            }
+
+            .sharedInfoButton{
+                outline: none;
+                border: none;
+                background: #fff;
+                color: rgba(240, 93, 99, 1);
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24.51px;
+                cursor: pointer;
+                transition: .25s linear;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .postCard{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .postCard{
+        width: 325px;
+        padding: 20px;
+    }
+}

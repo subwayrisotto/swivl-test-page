@@ -1,0 +1,41 @@
+.modalContent{
+    position: absolute;
+    top: 40px;
+    right: -45%;
+    width: 176px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    opacity: 0.94;
+    padding: 24px 0;
+
+    .modalList{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .modalListItem{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            padding: 9px 24px;
+            cursor: pointer;
+            transition: .25s linear;
+
+            .modalListItemIcon{
+                width: 20px;
+                height: 20px;
+                margin-right: 16px;
+            }
+
+            &.active{
+                background: rgba(236, 241, 248, 1);
+            }
+
+            &:hover{
+                background: rgba(236, 241, 248, 1);
+            }
+        }
+    }
+}
